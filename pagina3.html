@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación CH4-V5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* CONFIGURACIÓN GENERAL */
+        * { box-sizing: border-box; }
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            margin: 0;
+            padding: 50px 0;
+        }
+
+        /* CONTENEDOR DE CADA DIAPOSITIVA */
+        .slide-container {
+            width: 1000px;
+            min-height: 600px;
+            background-color: #000;
+            color: #f5f5f5;
+            font-family: 'Urbanist', sans-serif;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+
+        /* DECORACIÓN DE FONDO */
+        .slide-container::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, rgba(222, 255, 154, 0.1) 0%, transparent 70%);
+        }
+
+        /* TIPOGRAFÍA */
+        h1 { font-size: 70px; font-weight: 700; margin: 0; line-height: 1.1; text-align: center;}
+        h1 span { color: #deff9a; }
+        .slide-title { font-size: 40px; font-weight: 500; margin-bottom: 30px; color: #deff9a; border-left: 5px solid #deff9a; padding-left: 20px; }
+        h3 { font-size: 28px; color: #daffde; margin-bottom: 15px; }
+        p { font-size: 20px; line-height: 1.6; color: #e0e0e0; }
+        .subtitle { font-size: 22px; color: #daffde; text-align: center; margin-top: 10px; opacity: 0.8; }
+
+        /* IMAGEN PRINCIPAL (LOGO) */
+        .header-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* CUADRICULAS Y LAYOUTS */
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        
+        .tile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .tile { background: #111; padding: 25px; border-radius: 15px; border: 1px solid #222; }
+        .tile i { font-size: 40px; color: #deff9a; margin-bottom: 15px; }
+
+        /* SECCIÓN AUDIO Y QR */
+        .audio-player {
+            background: #222;
+            padding: 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            border: 1px solid #deff9a;
+        }
+        .qr-placeholder {
+            background: #fff;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* TABLA DE COSTOS */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 20px; text-align: left; border-bottom: 1px solid #333; }
+        th { color: #deff9a; font-size: 22px; }
+        .highlight { color: #deff9a; font-weight: bold; font-size: 24px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <div style="margin: auto;">
+            <img src="C:\Users\josue\Downloads\Logo en dorado.png"  class="header-img"  >
+            <h1>CH4-<span>V5</span></h1>
+            <p class="subtitle"></p>
+            <div style="text-align: center; margin-top: 50px; opacity: 0.7;">
+                <p>Josué de Jesús Chávez Sánchez | Joel Verde Martínez</p>
+                <p>Leonardo Simon Reséndiz | Diego Ruiz Pichardo</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Contexto Social</h2>
+        <p>La cantidad de personas con discapacidad visual o ceguera total representa un desafío global en términos de movilidad y autonomía. El desarrollo de tecnología asistiva no es solo una innovación, sino una necesidad para mejorar la calidad de vida y la seguridad de millones de usuarios que enfrentan barreras en su entorno diario.</p>
+        <div class="tile-grid">
+            <div class="tile">
+                <i class=""></i>
+                <h3>Inclusión</h3>
+                <p>Buscamos eliminar las barreras físicas mediante el uso de IA.</p>
+            </div>
+            <div class="tile">
+                <i class=""></i>
+                <h3>Impacto</h3>
+                <p>Soluciones diseñadas para entornos urbanos complejos.</p>
+            </div>
+            <div class="tile">
+                <i class=""></i>
+                <h3>Seguridad</h3>
+                <p>Prevención de accidentes en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">¿Qué es CH4?</h2>
+        <div class="two-column">
+            <div>
+                <p><strong>CH4</strong> es un ecosistema operativo de inteligencia artificial diseñado para operaciones especiales. Se compone de dos elementos fundamentales que trabajan en conjunto:</p>
+                <ul>
+                    <li>Un dispositivo inteligente portátil.</li>
+                    <li>Una aplicación de IA avanzada.</li>
+                </ul>
+            </div>
+            <div style="text-align: center;">
+                <img src="C:\Users\josue\Downloads\IMG_20251127_074817_edit_36453710623383.jpg" class="header-img" > 
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">¿Cómo funciona?</h2>
+        <p>El sistema opera mediante <strong>indicaciones somatosensoriales</strong> que transforman la visión en sensaciones táctiles (vibraciones):</p>
+        <div class="tile-grid">
+            <div class="tile">
+                <h3>Detección a 1m</h3>
+                <p>Una vibración constante alerta sobre obstáculos a 1 metro, dando tiempo de reacción.</p>
+            </div>
+            <div class="tile">
+                <h3>Muros y Mallas</h3>
+                <p>Genera un pulso de vibración constante al detectar superficies sólidas laterales.</p>
+            </div>
+            <div class="tile">
+                <h3>Escaleras</h3>
+                <p>Al detectar desniveles, la frecuencia aumenta rápidamente para advertir el cambio de altura.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Aplicación</h2>
+        <div class="two-column">
+            <div style="text-align: center;">
+                <img src="C:\Users\josue\Downloads\IMG-20260504-WA0038.jpg"  class="header-img" >
+            </div>
+            <div>
+                <p>La aplicación integra una IA desarrollada específicamente para describir el entorno mediante fotos instantáneas.</p>
+                <p>Para su correcto funcionamiento, el usuario debe portar el dispositivo en el pecho. El ecosistema requiere la presencia de ambos elementos (App + Dispositivo) para garantizar la precisión en la descripción del contexto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Costos y Accesibilidad</h2>
+        
+        <table>
+            <tr>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th>Alianza Estratégica</th>
+            </tr>
+            <tr>
+                <td>Precio Actual</td>
+                <td class="highlight">$4,000 MXN</td>
+                <td>Producción Estándar</td>
+            </tr>
+            <tr>
+                <td>Precio Optimizado</td>
+                <td class="highlight">$2200 MXN</td>
+                <td>Microchips & PCBs</td>
+            </tr>
+        </table>
+        <p style="margin-top: 20px;">La alianza con empresas de microchips e impresiones PCB permite reducir los costos drásticamente, haciendo el dispositivo accesible para todos.</p>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Indicaciones</h2>
+        <p>A continuación, se presenta la guía auditiva para la colocación el prototipo:</p>
+        <audio controls> 
+
+            <source src="C:\Users\josue\Downloads\Instructivo.mp3" type="">
+
+        </audio>
+        
+    
+
+</body>
+</html>
